@@ -36,8 +36,9 @@ console.log(res)
 
 ```mermaid
 sequenceDiagram
-  loop quadrants for count
+  loop count
     Major->>+Minor: seed
-    Note over Major,Minor: composite
+    Minor-->Minor: quadrant/2
   end
+Note over Major,Minor: composite
 ```
