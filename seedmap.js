@@ -1,4 +1,4 @@
-const seedmap = function (seed = Math.random(), size = 64, num = 1) {
+const seedmap = function (seed = Math.random(), size = 64, count = 1) {
   // params
   size = Math.floor(size);
   let k = {
@@ -74,7 +74,7 @@ const seedmap = function (seed = Math.random(), size = 64, num = 1) {
   }
 
   // tiles increment detail from seed until size
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < count; i++) {
     // special
     let major = document.createElement("canvas");
     major.width = major.height = size;
@@ -91,7 +91,7 @@ const seedmap = function (seed = Math.random(), size = 64, num = 1) {
     quad(k.map[i], k.max, true);
   }
 
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < count; i++) {
     // minor: until size
     quad(k.map[i], k.max);
   }
