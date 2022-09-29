@@ -28,3 +28,12 @@ console.log(res)
   seed: 12345678,
 }
 ```
+
+
+```mermaid
+sequenceDiagram
+  loop quantity for quadrants
+    Major->>+Minor: seed
+    Note over Major,Minor: composite
+  end
+```
