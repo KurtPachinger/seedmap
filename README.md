@@ -7,9 +7,9 @@ Generate canvas tiles using 2d noise from seed. Major/minor pass preserves prima
 ![seedmap_01_32](https://user-images.githubusercontent.com/48163461/193112273-2076e10e-ee1b-431c-94ac-557fb6f15a0f.png)
 
 ### usage
-* `seed` -- Starting value for recursive noise. Default is Math.random().
-* `size` -- Dimension of canvases. Default is 64.
-* `quantity` -- Number of canvases. Default is 1.
+* `seed` -- Start value for recursive noise. Default is Math.random().
+* `size` -- Size of canvas. Default is 64.
+* `count` -- Total canvases. Default is 1.
 
 ```javascript
 import { seedmap } from "./seedmap.js";
@@ -17,9 +17,9 @@ import { seedmap } from "./seedmap.js";
 // parameters
 let seed = Math.random()
 let size = 64;
-let quantity = 2;
+let count = 2;
 // run...
-let res = seedmap(seed, size, quantity);
+let res = seedmap(seed, size, count);
 ```
 ### response
 
@@ -36,7 +36,7 @@ console.log(res)
 
 ```mermaid
 sequenceDiagram
-  loop quantity for quadrants
+  loop count for quadrants
     Major->>+Minor: seed
     Note over Major,Minor: composite
   end
