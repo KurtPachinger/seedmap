@@ -1,6 +1,11 @@
 # seedmap
 Generate canvas tiles using 2d noise from seed. Major/minor pass preserves primary detail quadrants cross-resolution.
 
+![seedmap_02_64](https://user-images.githubusercontent.com/48163461/193112204-0044ac70-874c-4c34-953f-2072c55191eb.png)
+![seedmap_01_64](https://user-images.githubusercontent.com/48163461/193112279-472613d3-e010-4ac2-ad43-e1d0cdb86fad.png)
+![seedmap_02_32](https://user-images.githubusercontent.com/48163461/193112200-eaf5da88-c1fb-4605-aaa3-0781168854ca.png)
+![seedmap_01_32](https://user-images.githubusercontent.com/48163461/193112273-2076e10e-ee1b-431c-94ac-557fb6f15a0f.png)
+
 ### usage
 * `seed` -- Starting value for recursive noise. Default is Math.random().
 * `size` -- Dimension of canvases. Default is 64.
@@ -28,12 +33,6 @@ console.log(res)
   seed: 12345678,
 }
 ```
-
-![seedmap_02_32](https://user-images.githubusercontent.com/48163461/193112200-eaf5da88-c1fb-4605-aaa3-0781168854ca.png)
-![seedmap_02_64](https://user-images.githubusercontent.com/48163461/193112204-0044ac70-874c-4c34-953f-2072c55191eb.png)
-![seedmap_01_32](https://user-images.githubusercontent.com/48163461/193112273-2076e10e-ee1b-431c-94ac-557fb6f15a0f.png)
-![seedmap_01_64](https://user-images.githubusercontent.com/48163461/193112279-472613d3-e010-4ac2-ad43-e1d0cdb86fad.png)
-
 
 ```mermaid
 sequenceDiagram
