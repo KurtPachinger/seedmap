@@ -1,0 +1,43 @@
+html,
+body,
+fieldset,
+input, p,
+canvas {
+  font-family: monospace;
+  margin: 0.125em;
+  padding: 0.125em;
+}
+
+p {
+  color: #808080;
+}
+
+label {
+  position: relative;
+  display: block;
+  clear: both;
+  width: 16em;
+  input {
+    float: right;
+  }
+  &[for]:after {
+    content: attr(data-res);
+    position: absolute;
+    left: 100%;
+  }
+}
+
+
+canvas {
+  max-width: 12em;
+  width: calc(16.6% - 0.5em);
+  image-rendering: pixelated;
+  float: left;
+
+  &:hover{
+    transform: scale(1.5)
+  }
+  &:nth-of-type(6 + 1) {
+    clear: left;
+  }
+}
