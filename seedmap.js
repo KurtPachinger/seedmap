@@ -1,4 +1,4 @@
-const seedmap = function (seed, size = 64, qty = 1) {
+const seedmap = function (seed = Math.random(), size = 64, qty = 1) {
   // params
   size = Math.floor(size);
   let k = {
