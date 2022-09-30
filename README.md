@@ -15,7 +15,7 @@ Generate canvas tiles using 2d noise from seed. Major/minor pass preserves prima
 import { seedmap } from "./seedmap.js";
 
 // parameters
-let seed = Math.random()
+let seed = Math.random();
 let size = 64;
 let count = 2;
 // run...
