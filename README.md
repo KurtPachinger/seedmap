@@ -26,7 +26,7 @@ let res = seedmap(seed, size, count);
 ```javascript
 console.log(res)
 {
-  dat: {pos: 4800, neg: 6400, time: 24.0}
+  dat: {pos: 4800, neg: 6400, time: 24.0},
   map: [canvas, canvas],
   max: 64,
   min: 4,
