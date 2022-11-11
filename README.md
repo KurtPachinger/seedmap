@@ -22,7 +22,6 @@ let count = 2;
 let res = seedmap(seed, size, count);
 ```
 ### response
-
 ```javascript
 console.log(res)
 {
